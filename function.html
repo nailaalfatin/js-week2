@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+    <!-- untuk melakukan sebuah perintah -->
+</head>
+<body>
+    <p>suhu fahrenheit ke celcius</p>
+    <strong id="hasil"></strong>
+    
+    <script>
+        function toCelcius(suhu) {
+            return (5 / 9) * (suhu - 32);
+        }
+        let value = "temperaturnya adalah " + toCelcius(77) + " Celcius"
+        document.getElementById("hasil").innerHTML = value
+    </script>
+</body>
+</html>
+
+
+<!-- script
+    di awal vidio ini kita akan belajar mengenai function dalam javascript
+    nah, untuk function itu sendiri gunanya untuk mengerjakan suatu perintah
+    gimna sih caranya ngubah fahrenheit ke celcius dalam javascript?
+    pertama, kita bikin <p> dlu deh .....
+    trus kita bikin wadah buat hasil nanti si fahrenheit ke celcius
+    nah abis itu kta kasi id di wadahnya itu buat nnti dipanggil di scriptnya
+    trus kita mulai bikin script..
+    kita ketik funcion trus func kita kasi nama misalkan toCelcius
+    trus kita tulis di parameternya suhu 
+    nah, apa sih gunanya parameter? gunanya itu buat menampung data
+    trus kita tulis return, return tu untuk memberikan hasil dalam javascrit
+    trus kita tulis rumus fahrenheit ke celcius 
+    aku ketik duls yaa.... nah ini tuh emang udh rumusnya fahrenheit jadi gabisa diganti"
+    nah trus kita tulis let nah trus kita nama value trus kita kasi string...
+    trus tulis documet..... trus kita panggil si id nya trus kita pake inner buat ngubah kata" di htmlnya
+    trus kta pke inner dr variabel value 
+    udah deh
+-->

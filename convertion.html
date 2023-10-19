@@ -1,0 +1,58 @@
+<!-- 
+    Type casting => proses mengubah tipe data dari satu jenis ke jenis lain.
+                    Ini diperlukan ketika anda ingin melakukan operasi atau 
+                    pembandingan antara tipe dat ayang berbeda.
+
+    Jenis type casting => 1. Implicit Type Casting (Corection)
+                                Ini adalah tipe casting yang terjadi secara otomatis
+                                oleh JavaScript tanpa perlu campur tangan pengembang
+
+                          2. Expilicit Type Casting (Conversion)
+                                Ini adalah tipe casing yang dilakukan secara manual
+                                oleh pengembang.
+                                - parseInt() : Mengubah string menjadi bilangan bulat (integer).
+                                - parseFloat() : Mengubah string menjadi bilangan pecahan (float).
+                                - Number() : Mengubah tipe data lain menjadi tipe data angka.
+                                - String() : Mengubah tipe data lain menjadi tipe data string.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Type Casting</title>
+ </head>
+ <body>
+    
+    <script>
+        var angka = 5;
+        var teks = "10";
+        var hasil = angka + teks;
+        console.log(hasil);
+        console.log(typeof hasil);
+
+        // parseInt()
+        var stringAngka = "18";
+        var IntAngka = parseInt(stringAngka);
+        console.log(IntAngka);
+        console.log(typeof IntAngka);
+
+        // parseFloat()
+        var stringPecahan = "3.14";
+        var floatPecahan = parseFloat(stringPecahan);
+        console.log(floatPecahan);
+        console.log(typeof floatPecahan);
+
+        // Number
+        var angkaDariString = Number("20");
+        console.log(angkaDariString);
+        console.log(typeof angkaDariString);
+
+        // String
+        var angkaDariNumber = String(20);
+        console.log(angkaDariNumber);
+        console.log(typeof angkaDariNumber);
+    </script>
+ </body>
+ </html>

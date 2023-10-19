@@ -1,0 +1,47 @@
+<!-- 
+    Manipulasi Array
+
+    Manipulasi array adalah proses mengubah isi atau struktur array,
+    termasuk menambah, mengahapus, atau megaubah elemen-elemen di dalamnya.
+    1. push() : Menambahkan elemen baru ke akhir array.
+    2. unshift() : Menambahkan elemen baru ke akhir array.
+    3. pop() : Menghapus elemen terkhir dari array.
+    4. shift() : Menghapus elemen pertama dari array.
+    5. splice() : Menghapus elemen dari posisi tertenu dalam array atau mengganti dan menambah elemen.
+    6. concat() : Menggabungkan dua atau lebih array menjadi satu array baru.
+    7. sort() : Mengurutkan elemen-elemen dalam array secara leksikal.
+    8. reverse() : Membalik urutan elemen dalam array.
+    9. slice() : Mengambil sebagian elemen dari array dan membuat array baru.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+ </head>
+ <body>
+    
+    <script>
+        let fruits = ["apel", "jeruk", "mangga"];
+        // fruits[2] = "mangga";
+        // fruits.push("pisang");
+        fruits.pop();
+        console.log(fruits);
+
+
+        const fruit = [];
+        fruit[0] = "duren";
+        fruit[1] = "duren";
+        fruit[2] = "duren";
+
+        const sayur = new Array("terong", "bayam", "kangkung");
+
+        var warna = ["merah", "biru", "hijau"];
+        warna.splice(1, 2, "kuning");
+        console.log(warna);
+
+    </script>
+ </body>
+ </html>

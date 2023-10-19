@@ -1,0 +1,63 @@
+    <!-- 
+        Comparison Operator
+        ==      -> equal to (sama dengan)
+        ===     -> equal value and equal type (value dan tipe data sama)
+        !=      -> not equal (tidak sama dengan)
+        !==     -> not equal value or not equal type (value dan tipe tidak sama dengan)
+        >       -> greater than (lebih besar)
+        <       -> less than (lebih kecil)
+        >=      -> greater than or equal to (lebih besar sama degan)
+        <=      -> less than or equal to (lebih kecil sama dengan)
+
+        Operator Logika
+        &&      -> and
+        ||      -> or
+        !       -> not
+     -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operator</title>
+</head>
+<body>
+    <!-- Operator perbandingan -->
+     <p>Operator Perbandingan</p>
+     <strong id="answer"></strong>
+        <script>
+        let i = 10;
+        document.getElementById("answer").innerHTML = i <= 10
+         </script>
+
+
+    <!-- Operator logika -->
+    <p>Operator And</p>
+    <strong id="and"></strong>
+
+    <p>Operator Or</p>
+    <strong id="or"></strong>
+
+    <p>Operator Not</p>
+    <strong id="not"></strong>
+
+    <script>
+        // operator logika
+        let x = 6;
+        let y = 3;
+
+        // and
+        document.getElementById("and").innerHTML =
+        (x < 10 && y > 9)
+
+        // or
+        document.getElementById("or").innerHTML =
+        (x < 10 || y > 2)
+
+        // not
+        document.getElementById("not").innerHTML =
+        ! (x == y)
+    </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script>
+        const time = new Date().getHours();
+
+        let greeting;
+        if (time < 10) {
+            greeting = "good morning";
+        } else if (time < 20) {
+            greeting = "good day"
+        } else {
+            greeting = "good evening"
+        }
+        document.getElementById("demo").innerHTML = greeting;
+    </script>
+</body>
+</html>
+
+
+<!-- scripy
+    sekarang kita masuk ke percabangan
+    nah, seperti biasa kita bikin wadahnya dulu,
+     jagangn lupa kasi id
+    trus kita bikin script
+    tulis constanta kita kasi nama time, misalkan kita mau bikiin data tanggal
+    trus kita kasi new date buat biar dia update ke tanggal yang ada di device kita
+    trus kita kasi date() nah trus karna kta mau fokus nyarinya jam doang makanya kita tulis gethours()
+    trus kitakasi variabel let trus kasi nama greeting
+    trus kita bikn if else buat percabangan
+    
+-->
